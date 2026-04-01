@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>.alb — open album format</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:#fafaf8;
+  color:#1a1a18;
+  font-family:'IBM Plex Mono',monospace;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+.wrap{max-width:480px;width:100%;}
+.ext{
+  font-family:'Libre Baskerville',serif;
+  font-style:italic;
+  font-size:2.5rem;
+  color:#1a1a18;
+  display:block;
+  margin-bottom:1.5rem;
+}
+.desc{
+  font-size:.8rem;
+  color:#606058;
+  line-height:1.8;
+  letter-spacing:.04em;
+  margin-bottom:2.5rem;
+}
+.links{
+  display:flex;
+  flex-direction:column;
+  gap:.75rem;
+  margin-bottom:3rem;
+}
+.link-row{
+  display:flex;
+  align-items:baseline;
+  gap:1rem;
+}
+.link-row a{
+  font-size:.8rem;
+  color:#1a1a18;
+  text-decoration:none;
+  border-bottom:1px solid #1a1a18;
+  padding-bottom:1px;
+  transition:color .15s,border-color .15s;
+}
+.link-row a:hover{color:#c06820;border-color:#c06820;}
+.link-desc{
+  font-size:.68rem;
+  color:#a0a098;
+  letter-spacing:.06em;
+}
+.footer{
+  font-size:.62rem;
+  color:#c0c0b8;
+  letter-spacing:.1em;
+  display:flex;
+  gap:1.5rem;
+}
+.footer a{color:#c0c0b8;text-decoration:none;transition:color .15s;}
+.footer a:hover{color:#c06820;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="ext">.alb</span>
+  <p class="desc">An open file format for albums. Audio, artwork, and liner notes — one file.</p>
+  <div class="links">
+    <div class="link-row">
+      <a href="alb-player.html">Player</a>
+      <span class="link-desc">Open and play .alb files</span>
+    </div>
+    <div class="link-row">
+      <a href="alb-maker.html">Maker</a>
+      <span class="link-desc">Build a .alb file</span>
+    </div>
+    <div class="link-row">
+      <a href="alb-format-spec.md">Spec</a>
+      <span class="link-desc">Format documentation</span>
+    </div>
+  </div>
+  <div class="footer">
+    <a href="https://quiettheory.com" target="_blank">Quiet Theory Records</a>
+    <a href="https://github.com/quiettheory/alb" target="_blank">GitHub</a>
+  </div>
+</div>
+</body>
+</html>
